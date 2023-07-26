@@ -17,7 +17,54 @@
         <a href="unye.html">不野的</a>
         <a href="submit.html">提交</a>
       </div>
+
       <div class="ju" id="first">
+        <p class="zhengwen">
+          《野憋野头科技春季发布会延期通知》<br />
+
+          由于时间有限，原定于今天的野憋野头科技春季发布会延期至本星期六，具体时间待定！请各位周知[大哭]
+          <br />
+
+          @所有人
+        </p>
+        <p class="shuming">--野吧野吧野吧，野啦野炸点</p>
+        <!-- 示例4：复制button自己设置的值 -->
+        <button
+          class="btn"
+          data-clipboard-text="《野憋野头科技春季发布会延期通知》
+
+由于时间有限，原定于今天的野憋野头科技春季发布会延期至本星期六，具体时间待定！请各位周知[大哭]
+
+@所有人"
+          onclick='document.getElementById("tishi12").innerHTML = "已复制！"'
+        >
+          <p id="tishi12">复制到剪切板</p>
+        </button>
+        <script>
+          //4. 实例化clipboard
+          var clipboard = new ClipboardJS(".btn");
+
+          //5. 复制成功的响应事件【按F12控制台可见】
+          clipboard.on("success", function (e) {
+            console.log(e);
+            //打印动作信息（copy或者cut）
+            console.info("Action:", e.action);
+            //打印复制的文本
+            console.info("Text:", e.text);
+            //打印trigger
+            console.info("Trigger:", e.trigger);
+          });
+
+          //6. 复制失败的响应事件
+          clipboard.on("error", function (e) {
+            console.log(e);
+            console.error("Action:", e.action);
+            console.error("Trigger:", e.trigger);
+          });
+        </script>
+      </div>
+
+      <div class="ju">
         <p class="zhengwen">野吧野吧野吧，野啦野炸点</p>
         <p class="shuming">--yebie</p>
         <!-- 示例4：复制button自己设置的值 -->
