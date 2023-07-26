@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="bear-_1_.png" sizes="625x625" />
+    <script src="dist/clipboard.min.js"></script>
+    <title>野憋语录</title>
+  </head>
+  <body>
+    <h1>野憋语录</h1>
+    <div class="nav">
+      <a href="index.html">野的</a>
+      <a href="unye.html">不野的</a>
+      <a href="submit.html">提交</a>
+    </div>
+
+    <div class="ju" id="first">
+      <p class="zhengwen">
+        普及一下肚子大的危害性；<br />
+        血管“胖了（血压高）<br />
+        肠道“胖了（血脂高）<br />
+        肝脏“胖了（脂肪肝）<br />
+        肾脏“胖了（尿酸高）<br />
+        大腿“胖了（关节痛）<br />
+        心脏“胖了（冠心病）
+      </p>
+      <p class="shuming">--刘群娣🌹</p>
+      <!-- 示例4：复制button自己设置的值 -->
+      <button
+        class="btn"
+        data-clipboard-text="普及一下肚子大的危害性；
+血管“胖了（血压高）
+肠道“胖了（血脂高）
+肝脏“胖了（脂肪肝）
+肾脏“胖了（尿酸高）
+大腿“胖了（关节痛）
+心脏“胖了（冠心病）"
+        onclick='document.getElementById("tishi").innerHTML = "已复制！"'
+      >
+        <p id="tishi">复制到剪切板</p>
+      </button>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+
+      <script>
+        //4. 实例化clipboard
+        var clipboard = new ClipboardJS(".btn");
+
+        //5. 复制成功的响应事件【按F12控制台可见】
+        clipboard.on("success", function (e) {
+          console.log(e);
+          //打印动作信息（copy或者cut）
+          console.info("Action:", e.action);
+          //打印复制的文本
+          console.info("Text:", e.text);
+          //打印trigger
+          console.info("Trigger:", e.trigger);
+        });
+
+        //6. 复制失败的响应事件
+        clipboard.on("error", function (e) {
+          console.log(e);
+          console.error("Action:", e.action);
+          console.error("Trigger:", e.trigger);
+        });
+      </script>
+    </div>
+
+    <div class="ju">
+      <p class="zhengwen">
+        🌈
+        徐老师76岁的母亲服用雪之保+清源胶囊5个月，嘴唇红润了，皮肤白皙了，皱纹少了，脸上的大块黑斑消失了，皮肤白里透红，呈年轻态‼️30年降压药也停了，多年浮肿的腿也消肿了，滑膜炎膝盖积液也好了，腿走路轻快多了，老人家精神状态越来越好！经常念叨着感谢王业富教授‼️
+      </p>
+      <p class="shuming">--刘群娣🌹</p>
+      <!-- 示例4：复制button自己设置的值 -->
+      <button
+        class="btn"
+        data-clipboard-text="🌈 徐老师76岁的母亲服用雪之保+清源胶囊5个月，嘴唇红润了，皮肤白皙了，皱纹少了，脸上的大块黑斑消失了，皮肤白里透红，呈年轻态‼️30年降压药也停了，多年浮肿的腿也消肿了，滑膜炎膝盖积液也好了，腿走路轻快多了，老人家精神状态越来越好！经常念叨着感谢王业富教授‼️"
+        onclick='document.getElementById("tishi2").innerHTML = "已复制！"'
+      >
+        <p id="tishi2">复制到剪切板</p>
+      </button>
+      <script>
+        //4. 实例化clipboard
+        var clipboard = new ClipboardJS(".btn");
+
+        //5. 复制成功的响应事件【按F12控制台可见】
+        clipboard.on("success", function (e) {
+          console.log(e);
+          //打印动作信息（copy或者cut）
+          console.info("Action:", e.action);
+          //打印复制的文本
+          console.info("Text:", e.text);
+          //打印trigger
+          console.info("Trigger:", e.trigger);
+        });
+
+        //6. 复制失败的响应事件
+        clipboard.on("error", function (e) {
+          console.log(e);
+          console.error("Action:", e.action);
+          console.error("Trigger:", e.trigger);
+        });
+      </script>
+    </div>
+
+    <div class="ju">
+      <p class="zhengwen">
+        天母蓝鸟｜点心系列新品上市🍰<br />
+        茶歇系列、公司开业、婚礼点心台、满月宴会，均可预定😘<br />
+        🆕更多款式/私人定制款均可联系
+      </p>
+      <p class="shuming">--高兴儿</p>
+      <!-- 示例4：复制button自己设置的值 -->
+      <button
+        class="btn"
+        data-clipboard-text="天母蓝鸟｜点心系列新品上市🍰
+茶歇系列、公司开业、婚礼点心台、满月宴会，均可预定😘
+🆕更多款式/私人定制款均可联系"
+        onclick='document.getElementById("tishi3").innerHTML = "已复制！"'
+      >
+        <p id="tishi3">复制到剪切板</p>
+      </button>
+      <script>
+        //4. 实例化clipboard
+        var clipboard = new ClipboardJS(".btn");
+
+        //5. 复制成功的响应事件【按F12控制台可见】
+        clipboard.on("success", function (e) {
+          console.log(e);
+          //打印动作信息（copy或者cut）
+          console.info("Action:", e.action);
+          //打印复制的文本
+          console.info("Text:", e.text);
+          //打印trigger
+          console.info("Trigger:", e.trigger);
+        });
+
+        //6. 复制失败的响应事件
+        clipboard.on("error", function (e) {
+          console.log(e);
+          console.error("Action:", e.action);
+          console.error("Trigger:", e.trigger);
+        });
+      </script>
+    </div>
+
+    <div class="ju">
+      <p class="zhengwen">
+        🌹从事中医15年的<br />
+        🌹刘瑞老师<br />
+        能把五脏六腑、奇经八脉与健康的关系<br />
+        用最简单、最贴切生活的比喻讲出来<br />
+        🌹让小白快速成专家<br />
+        🌹听完就能输出变现<br />
+      </p>
+
+      <p class="shuming">--刘群娣🌹</p>
+      <!-- 示例4：复制button自己设置的值 -->
+      <button
+        class="btn"
+        data-clipboard-text="🌹从事中医15年的
+🌹刘瑞老师
+能把五脏六腑、奇经八脉与健康的关系
+用最简单、最贴切生活的比喻讲出来
+🌹让小白快速成专家
+🌹听完就能输出变现"
+        onclick='document.getElementById("tishi4").innerHTML = "已复制！"'
+      >
+        <p id="tishi4">复制到剪切板</p>
+      </button>
+      <script>
+        //4. 实例化clipboard
+        var clipboard = new ClipboardJS(".btn");
+
+        //5. 复制成功的响应事件【按F12控制台可见】
+        clipboard.on("success", function (e) {
+          console.log(e);
+          //打印动作信息（copy或者cut）
+          console.info("Action:", e.action);
+          //打印复制的文本
+          console.info("Text:", e.text);
+          //打印trigger
+          console.info("Trigger:", e.trigger);
+        });
+
+        //6. 复制失败的响应事件
+        clipboard.on("error", function (e) {
+          console.log(e);
+          console.error("Action:", e.action);
+          console.error("Trigger:", e.trigger);
+        });
+      </script>
+    </div>
+
+    <div class="ju">
+      <p class="zhengwen">
+        🌈 拿1万出来养生，很多人会说没钱，<br />
+        如果拿100万出来摆脱这个姿势，99% <br />
+        的人砸锅卖铁也会变出钱来，渴望能<br />
+        改变现状可是锅又能值多少钱呢​​​​
+      </p>
+
+      <p class="shuming">--刘群娣🌹</p>
+      <!-- 示例4：复制button自己设置的值 -->
+      <button
+        class="btn"
+        data-clipboard-text="🌈 拿1万出来养生，很多人会说没钱，
+如果拿100万出来摆脱这个姿势，99%
+的人砸锅卖铁也会变出钱来，渴望能
+改变现状可是锅又能值多少钱呢​​​​"
+        onclick='document.getElementById("tishi5").innerHTML = "已复制！"'
+      >
+        <p id="tishi5">复制到剪切板</p>
+      </button>
+      <script>
+        //4. 实例化clipboard
+        var clipboard = new ClipboardJS(".btn");
+
+        //5. 复制成功的响应事件【按F12控制台可见】
+        clipboard.on("success", function (e) {
+          console.log(e);
+          //打印动作信息（copy或者cut）
+          console.info("Action:", e.action);
+          //打印复制的文本
+          console.info("Text:", e.text);
+          //打印trigger
+          console.info("Trigger:", e.trigger);
+        });
+
+        //6. 复制失败的响应事件
+        clipboard.on("error", function (e) {
+          console.log(e);
+          console.error("Action:", e.action);
+          console.error("Trigger:", e.trigger);
+        });
+      </script>
+    </div>
+  </body>
+</html>
