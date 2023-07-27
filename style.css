@@ -92,6 +92,20 @@ div.ju {
     0 6px 20px 0 rgba(0, 0, 0, 0.02);
   padding: 20px;
   margin-top: 14px;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)) , url("yebie-big.png");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center;
+}
+
+div.unyeju {
+  background-color: white;
+  border-radius: 14px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.02),
+    0 6px 20px 0 rgba(0, 0, 0, 0.02);
+  padding: 20px;
+  margin-top: 14px;
 }
 
 #first {
@@ -129,7 +143,8 @@ button {
 #tishi9,
 #tishi10,
 #tishi11,
-#tishi12 {
+#tishi12,
+#tishi13 {
   font-family: Alibaba-regular;
   line-height: 4px;
 }
@@ -153,9 +168,31 @@ a.sub {
   font-family: Alibaba-semiblod;
   margin-left: auto;
   margin-right: auto;
+  background-color: black;
+  background-image:
+    url("yebie-big.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  color: white;
 }
 
 .subb {
   margin-top: 200px;
   text-align: center;
+}
+
+p.information {
+  font-family: Alibaba-regular-l3;
+  text-align: center;
+  font-size: 14px;
+}
+
+div.unyeju-b {
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.02),
+      0 6px 20px 0 rgba(0, 0, 0, 0.02);
+    padding: 20px;
+    margin-top: 100px;
 }
