@@ -16,133 +16,64 @@
       <a href="submit.html">提交</a>
     </div>
 
-    <div class="ju" id="first">
-      <p class="zhengwen">🔻几千款特价鞋 全部只要99 💰 答应我 ➕爆他👇</p>
+    <div class="unyeju" id="first">
+      <p class="zhengwen">
+        有人说：等你成功了，我就跟你干！<br />
+        kao！成功了上五星还要你干嘛？来借钱吗？<br />
+        你可知道，我成功了，你和我的距离已经很遥远了！雪中送炭的时候你在看；抱团取暖的时候你在躲；同舟共济的时候你不出力；锦上添花的时候，我不缺人！<br />
+        活着，最大的失败不是跌倒，而是从来不敢奔跑。<br />
+        ——致正在拼搏的你
+      </p>
+      <p class="shuming">--刘群娣🌹</p>
+      <!-- 示例4：复制button自己设置的值 -->
+      <button
+        class="btn"
+        data-clipboard-text="有人说：等你成功了，我就跟你干！
+kao！成功了上五星还要你干嘛？来借钱吗？
+你可知道，我成功了，你和我的距离已经很遥远了！雪中送炭的时候你在看；抱团取暖的时候你在躲；同舟共济的时候你不出力；锦上添花的时候，我不缺人！
+活着，最大的失败不是跌倒，而是从来不敢奔跑。   
+                       ——致正在拼搏的你"
+        onclick='document.getElementById("tishi10").innerHTML = "已复制！"'
+      >
+        <p id="tishi10">复制到剪切板</p>
+      </button>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+
+      <script>
+        //4. 实例化clipboard
+        var clipboard = new ClipboardJS(".btn");
+
+        //5. 复制成功的响应事件【按F12控制台可见】
+        clipboard.on("success", function (e) {
+          console.log(e);
+          //打印动作信息（copy或者cut）
+          console.info("Action:", e.action);
+          //打印复制的文本
+          console.info("Text:", e.text);
+          //打印trigger
+          console.info("Trigger:", e.trigger);
+        });
+
+        //6. 复制失败的响应事件
+        clipboard.on("error", function (e) {
+          console.log(e);
+          console.error("Action:", e.action);
+          console.error("Trigger:", e.trigger);
+        });
+      </script>
+    </div>
+
+    <div class="unyeju">
+      <p class="zhengwen">
+        🔻几千款特价鞋 全部只要99 💰<br />
+        答应我 ➕爆他👇
+      </p>
       <p class="shuming">--野吧野吧野吧，野啦野炸点</p>
       <!-- 示例4：复制button自己设置的值 -->
       <button
         class="btn"
         data-clipboard-text="🔻几千款特价鞋  全部只要99 💰
 答应我 ➕爆他👇"
-        onclick='document.getElementById("tishi6").innerHTML = "已复制！"'
-      >
-        <p id="tishi6">复制到剪切板</p>
-      </button>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
-
-      <script>
-        //4. 实例化clipboard
-        var clipboard = new ClipboardJS(".btn");
-
-        //5. 复制成功的响应事件【按F12控制台可见】
-        clipboard.on("success", function (e) {
-          console.log(e);
-          //打印动作信息（copy或者cut）
-          console.info("Action:", e.action);
-          //打印复制的文本
-          console.info("Text:", e.text);
-          //打印trigger
-          console.info("Trigger:", e.trigger);
-        });
-
-        //6. 复制失败的响应事件
-        clipboard.on("error", function (e) {
-          console.log(e);
-          console.error("Action:", e.action);
-          console.error("Trigger:", e.trigger);
-        });
-      </script>
-    </div>
-
-    <div class="ju">
-      <p class="zhengwen">
-        小众背景图找她准没错✔️原图➕p5哦  朋友圈还有小惊喜！🔮
-      </p>
-      <p class="shuming">--野吧野吧野吧，野啦野炸点</p>
-      <!-- 示例4：复制button自己设置的值 -->
-      <button
-        class="btn"
-        data-clipboard-text="小众背景图找她准没错✔️原图➕p5哦 
-朋友圈还有小惊喜！🔮"
-        onclick='document.getElementById("tishi7").innerHTML = "已复制！"'
-      >
-        <p id="tishi7">复制到剪切板</p>
-      </button>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
-
-      <script>
-        //4. 实例化clipboard
-        var clipboard = new ClipboardJS(".btn");
-
-        //5. 复制成功的响应事件【按F12控制台可见】
-        clipboard.on("success", function (e) {
-          console.log(e);
-          //打印动作信息（copy或者cut）
-          console.info("Action:", e.action);
-          //打印复制的文本
-          console.info("Text:", e.text);
-          //打印trigger
-          console.info("Trigger:", e.trigger);
-        });
-
-        //6. 复制失败的响应事件
-        clipboard.on("error", function (e) {
-          console.log(e);
-          console.error("Action:", e.action);
-          console.error("Trigger:", e.trigger);
-        });
-      </script>
-    </div>
-
-    <div class="ju">
-      <p class="zhengwen">
-        我三天换了三副美瞳 <br />同学还以为我家里有矿 <br />其实我是偷偷 ➕了她
-      </p>
-      <p class="shuming">--野吧野吧野吧，野啦野炸点</p>
-      <!-- 示例4：复制button自己设置的值 -->
-      <button
-        class="btn"
-        data-clipboard-text="我三天换了三副美瞳
-同学还以为我家里有矿
-其实我是偷偷 ➕了她"
-        onclick='document.getElementById("tishi8").innerHTML = "已复制！"'
-      >
-        <p id="tishi8">复制到剪切板</p>
-      </button>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
-
-      <script>
-        //4. 实例化clipboard
-        var clipboard = new ClipboardJS(".btn");
-
-        //5. 复制成功的响应事件【按F12控制台可见】
-        clipboard.on("success", function (e) {
-          console.log(e);
-          //打印动作信息（copy或者cut）
-          console.info("Action:", e.action);
-          //打印复制的文本
-          console.info("Text:", e.text);
-          //打印trigger
-          console.info("Trigger:", e.trigger);
-        });
-
-        //6. 复制失败的响应事件
-        clipboard.on("error", function (e) {
-          console.log(e);
-          console.error("Action:", e.action);
-          console.error("Trigger:", e.trigger);
-        });
-      </script>
-    </div>
-
-    <div class="ju"">
-      <p class="zhengwen">宝 想变美 变白 变溲 拥有马甲线就偷偷➕上她👇</p>
-      <p class="shuming">--野吧野吧野吧，野啦野炸点</p>
-      <!-- 示例4：复制button自己设置的值 -->
-      <button
-        class="btn"
-        data-clipboard-text="宝 想变美 变白 变溲
-拥有马甲线就偷偷➕上她👇"
         onclick='document.getElementById("tishi9").innerHTML = "已复制！"'
       >
         <p id="tishi9">复制到剪切板</p>
@@ -173,30 +104,19 @@
       </script>
     </div>
 
-    <div class="ju" id="first">
+    <div class="unyeju">
       <p class="zhengwen">
-        普及一下肚子大的危害性；<br />
-        血管“胖了（血压高）<br />
-        肠道“胖了（血脂高）<br />
-        肝脏“胖了（脂肪肝）<br />
-        肾脏“胖了（尿酸高）<br />
-        大腿“胖了（关节痛）<br />
-        心脏“胖了（冠心病）
+        小众背景图找她准没错✔️原图➕p5哦  朋友圈还有小惊喜！🔮
       </p>
-      <p class="shuming">--刘群娣🌹</p>
+      <p class="shuming">--野吧野吧野吧，野啦野炸点</p>
       <!-- 示例4：复制button自己设置的值 -->
       <button
         class="btn"
-        data-clipboard-text="普及一下肚子大的危害性；
-血管“胖了（血压高）
-肠道“胖了（血脂高）
-肝脏“胖了（脂肪肝）
-肾脏“胖了（尿酸高）
-大腿“胖了（关节痛）
-心脏“胖了（冠心病）"
-        onclick='document.getElementById("tishi").innerHTML = "已复制！"'
+        data-clipboard-text="小众背景图找她准没错✔️原图➕p5哦 
+朋友圈还有小惊喜！🔮"
+        onclick='document.getElementById("tishi8").innerHTML = "已复制！"'
       >
-        <p id="tishi">复制到剪切板</p>
+        <p id="tishi8">复制到剪切板</p>
       </button>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
 
@@ -224,7 +144,137 @@
       </script>
     </div>
 
-    <div class="ju">
+    <div class="unyeju">
+      <p class="zhengwen">
+        我三天换了三副美瞳 <br />同学还以为我家里有矿 <br />其实我是偷偷 ➕了她
+      </p>
+      <p class="shuming">--野吧野吧野吧，野啦野炸点</p>
+      <!-- 示例4：复制button自己设置的值 -->
+      <button
+        class="btn"
+        data-clipboard-text="我三天换了三副美瞳
+同学还以为我家里有矿
+其实我是偷偷 ➕了她"
+        onclick='document.getElementById("tishi7").innerHTML = "已复制！"'
+      >
+        <p id="tishi7">复制到剪切板</p>
+      </button>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+
+      <script>
+        //4. 实例化clipboard
+        var clipboard = new ClipboardJS(".btn");
+
+        //5. 复制成功的响应事件【按F12控制台可见】
+        clipboard.on("success", function (e) {
+          console.log(e);
+          //打印动作信息（copy或者cut）
+          console.info("Action:", e.action);
+          //打印复制的文本
+          console.info("Text:", e.text);
+          //打印trigger
+          console.info("Trigger:", e.trigger);
+        });
+
+        //6. 复制失败的响应事件
+        clipboard.on("error", function (e) {
+          console.log(e);
+          console.error("Action:", e.action);
+          console.error("Trigger:", e.trigger);
+        });
+      </script>
+    </div>
+
+    <div class="unyeju">
+      <p class="zhengwen">宝 想变美 变白 变溲 拥有马甲线就偷偷➕上她👇</p>
+      <p class="shuming">--野吧野吧野吧，野啦野炸点</p>
+      <!-- 示例4：复制button自己设置的值 -->
+      <button
+        class="btn"
+        data-clipboard-text="宝 想变美 变白 变溲
+拥有马甲线就偷偷➕上她👇"
+        onclick='document.getElementById("tishi6").innerHTML = "已复制！"'
+      >
+        <p id="tishi6">复制到剪切板</p>
+      </button>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+
+      <script>
+        //4. 实例化clipboard
+        var clipboard = new ClipboardJS(".btn");
+
+        //5. 复制成功的响应事件【按F12控制台可见】
+        clipboard.on("success", function (e) {
+          console.log(e);
+          //打印动作信息（copy或者cut）
+          console.info("Action:", e.action);
+          //打印复制的文本
+          console.info("Text:", e.text);
+          //打印trigger
+          console.info("Trigger:", e.trigger);
+        });
+
+        //6. 复制失败的响应事件
+        clipboard.on("error", function (e) {
+          console.log(e);
+          console.error("Action:", e.action);
+          console.error("Trigger:", e.trigger);
+        });
+      </script>
+    </div>
+
+    <div class="unyeju">
+      <p class="zhengwen">
+        普及一下肚子大的危害性；<br />
+        血管“胖了（血压高）<br />
+        肠道“胖了（血脂高）<br />
+        肝脏“胖了（脂肪肝）<br />
+        肾脏“胖了（尿酸高）<br />
+        大腿“胖了（关节痛）<br />
+        心脏“胖了（冠心病）
+      </p>
+      <p class="shuming">--刘群娣🌹</p>
+      <!-- 示例4：复制button自己设置的值 -->
+      <button
+        class="btn"
+        data-clipboard-text="普及一下肚子大的危害性；
+血管“胖了（血压高）
+肠道“胖了（血脂高）
+肝脏“胖了（脂肪肝）
+肾脏“胖了（尿酸高）
+大腿“胖了（关节痛）
+心脏“胖了（冠心病）"
+        onclick='document.getElementById("tishi5").innerHTML = "已复制！"'
+      >
+        <p id="tishi5">复制到剪切板</p>
+      </button>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+
+      <script>
+        //4. 实例化clipboard
+        var clipboard = new ClipboardJS(".btn");
+
+        //5. 复制成功的响应事件【按F12控制台可见】
+        clipboard.on("success", function (e) {
+          console.log(e);
+          //打印动作信息（copy或者cut）
+          console.info("Action:", e.action);
+          //打印复制的文本
+          console.info("Text:", e.text);
+          //打印trigger
+          console.info("Trigger:", e.trigger);
+        });
+
+        //6. 复制失败的响应事件
+        clipboard.on("error", function (e) {
+          console.log(e);
+          console.error("Action:", e.action);
+          console.error("Trigger:", e.trigger);
+        });
+      </script>
+    </div>
+
+    <div class="unyeju">
       <p class="zhengwen">
         🌈
         徐老师76岁的母亲服用雪之保+清源胶囊5个月，嘴唇红润了，皮肤白皙了，皱纹少了，脸上的大块黑斑消失了，皮肤白里透红，呈年轻态‼️30年降压药也停了，多年浮肿的腿也消肿了，滑膜炎膝盖积液也好了，腿走路轻快多了，老人家精神状态越来越好！经常念叨着感谢王业富教授‼️
@@ -234,9 +284,9 @@
       <button
         class="btn"
         data-clipboard-text="🌈 徐老师76岁的母亲服用雪之保+清源胶囊5个月，嘴唇红润了，皮肤白皙了，皱纹少了，脸上的大块黑斑消失了，皮肤白里透红，呈年轻态‼️30年降压药也停了，多年浮肿的腿也消肿了，滑膜炎膝盖积液也好了，腿走路轻快多了，老人家精神状态越来越好！经常念叨着感谢王业富教授‼️"
-        onclick='document.getElementById("tishi2").innerHTML = "已复制！"'
+        onclick='document.getElementById("tishi4").innerHTML = "已复制！"'
       >
-        <p id="tishi2">复制到剪切板</p>
+        <p id="tishi4">复制到剪切板</p>
       </button>
       <script>
         //4. 实例化clipboard
@@ -262,7 +312,7 @@
       </script>
     </div>
 
-    <div class="ju">
+    <div class="unyeju">
       <p class="zhengwen">
         天母蓝鸟｜点心系列新品上市🍰<br />
         茶歇系列、公司开业、婚礼点心台、满月宴会，均可预定😘<br />
@@ -303,7 +353,7 @@
       </script>
     </div>
 
-    <div class="ju">
+    <div class="unyeju">
       <p class="zhengwen">
         🌹从事中医15年的<br />
         🌹刘瑞老师<br />
@@ -323,9 +373,9 @@
 用最简单、最贴切生活的比喻讲出来
 🌹让小白快速成专家
 🌹听完就能输出变现"
-        onclick='document.getElementById("tishi4").innerHTML = "已复制！"'
+        onclick='document.getElementById("tishi2").innerHTML = "已复制！"'
       >
-        <p id="tishi4">复制到剪切板</p>
+        <p id="tishi2">复制到剪切板</p>
       </button>
       <script>
         //4. 实例化clipboard
@@ -351,7 +401,7 @@
       </script>
     </div>
 
-    <div class="ju">
+    <div class="unyeju">
       <p class="zhengwen">
         🌈 拿1万出来养生，很多人会说没钱，<br />
         如果拿100万出来摆脱这个姿势，99% <br />
@@ -367,9 +417,9 @@
 如果拿100万出来摆脱这个姿势，99%
 的人砸锅卖铁也会变出钱来，渴望能
 改变现状可是锅又能值多少钱呢​​​​"
-        onclick='document.getElementById("tishi5").innerHTML = "已复制！"'
+        onclick='document.getElementById("tishi").innerHTML = "已复制！"'
       >
-        <p id="tishi5">复制到剪切板</p>
+        <p id="tishi">复制到剪切板</p>
       </button>
       <script>
         //4. 实例化clipboard
@@ -393,6 +443,12 @@
           console.error("Trigger:", e.trigger);
         });
       </script>
+    </div>
+
+    
+      <!---信息-->
+    <div class="unyeju">
+      <p class="information">版权所有©2023 Yebie.Inc. All rights reserved</p>
     </div>
   </body>
 </html>
